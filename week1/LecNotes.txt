@@ -1,0 +1,46 @@
+
+// Role of JVM: The Java Virtual Machine (JVM) enables Java programs to run on any operating system (OS). 
+// JVM is responsible for loading the Java class file into memory, verifying the class file, and executing
+// It acts as an intermediary between the Java application and the OS/hardware. While Java is platform-independent, 
+// the JVM is platform-dependent and must be specific to the OS.
+
+// Compilation Process: Java code written by programmers is human-readable. To run it on the JVM, 
+// the code is compiled by the Java Compiler (javac) into bytecode, an intermediate format understandable by the JVM.
+
+// Main Method Requirement: For execution, the JVM requires the main method with the specific signature public static void main(String[] args). 
+// This serves as the entry point for Java applications.
+
+// Bytecode and Class Files: The output of the compilation process is a .class file containing the bytecode. 
+// This bytecode is platform-independent and can run on any JVM.
+
+// Class and Object Orientation: Java is object-oriented, meaning all code resides inside classes. 
+// A class definition is mandatory in Java, and the file name must match the public class name.
+
+// Code Execution Steps:
+//     Write the Java code in a .java file.
+//     Compile it with javac to produce a .class file (bytecode).
+//     Run the bytecode using the JVM with the java command.
+
+// Single Entry Point: In projects with multiple files, the programmer must specify which file contains the main method. 
+// JVM starts execution from this specified file.
+
+// Code Readability and Syntax: Proper indentation and formatting make the code readable and maintainable, although they are not syntactically required.
+
+// Java Libraries and Runtime Environment: Java applications require additional libraries and a runtime environment. 
+// The JVM uses these resources to execute the bytecode.
+
+// Platform Independence of Applications: Bytecode allows Java applications to run on any device with a JVM,
+//  emphasizing the "write once, run anywhere" principle.
+
+// Cooking Analogy: Running a Java application is likened to cooking in a kitchen. 
+// Just as cooking requires additional ingredients and tools stored in the kitchen, Java applications require additional 
+// libraries and runtime resources provided by the JVM.
+
+// Execution Command: To execute a Java application, the java command is used with the class name (not the file name), 
+// which loads the bytecode into the JVM for execution. This produces the desired output, e.g., "Hello World."
+
+// JRE stands for Java Runtime Environment and it encapsulates JVM and some other libraries
+// JavaC is only for development purpose
+// JDK has JRE which in turn has JVM
+// To run application we need JRE 
+// To compile application we need JDK
