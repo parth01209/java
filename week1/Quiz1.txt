@@ -1,0 +1,3 @@
+What kind of error will be thrown if the main method is not found in the Java program?
+
+==> Run Time Error
