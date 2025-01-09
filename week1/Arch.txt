@@ -1,0 +1,35 @@
+What is JVM?
+==> JVM is the engine that runs Java Programs
+    It provides an environment for Java bytecode to execute
+    It is responsible for memory management, security, and other low-level tasks 
+    It is platform-independent, meaning that Java programs can run on any device that has a JVM installed
+    It is responsible for loading, linking, and initializing classes and objects
+    It is responsible for garbage collection, which is the process of automatically freeing up memory occupied by objects
+
+How JVM works?
+==> JVM works as follows:
+    1. The Java compiler compiles the Java source code into bytecode
+    2. The JVM loads the bytecode into memory
+    3. The JVM checks the bytecode for any errors or inconsistencies
+    4. The JVM creates a new process and executes the bytecode
+    5. The JVM provides a runtime environment for the Java program to run in
+
+What is JRE?
+==> JRE is the Java Runtime Environment
+    It includes the JVM and the libraries and other components that are required for Java programs to run
+    It is a subset of the JDK (Java Development Kit)
+    It is used to run Java programs, but it is not used to develop Java programs
+
+If Java is Car: 
+    JVM is engine
+    JRE is entire car
+
+What is JDK?
+==> JDK is the Java Development Kit
+    It includes JRE and additional tools and libraries that are required for developing Java programs
+    It is used to develop, compile, and run Java programs
+    It includes tools such as the Java compiler, the Java debugger, and the Java documentation generator
+    It is used by Java developers to create, test, and deploy Java applications
+
+If Java is car:
+    JDK is mechanic's workshop. 

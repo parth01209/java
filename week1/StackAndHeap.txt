@@ -1,0 +1,74 @@
+Java divides memory into two main areas to manage variables, objects, and method calls efficiently: 
+Stack and Heap
+
+Stack Memory : 
+
+The stack is a portion of memory allocated for method execution and local variables
+Storage : Primitive data types (e.g., int, float).
+          Object references (not the objects themselves).
+Each thread gets its own stack
+
+
+Working ===>
+When a method is called, a stack frame is created to store:
+
+    Method parameters.
+    Local variables.
+    Return addresses.
+
+Once the method execution is complete, the stack frame is popped (removed).
+
+
+class Example {
+    void calculate(int x, int y) {
+        int result = x + y; // Local variable stored in stack
+        System.out.println("Result: " + result);
+    }
+
+    public static void main(String[] args) {
+        Example obj = new Example(); // Reference stored in stack
+        obj.calculate(5, 10);        // calculate() stack frame created
+    }
+}
+
+
+Memory Flow ===>
+obj reference stored in stack.
+calculate() creates a new stack frame.
+After calculate() finishes, its frame is removed.
+
+
+Heap Memory : 
+
+The heap is used for dynamic memory allocation and stores objects and class-level variables.
+
+Storage : Objects and arrays.
+          Instance variables
+
+Shared across all threads
+
+
+Working ==>
+
+Objects are created using the new keyword.
+The garbage collector automatically removes unreferenced objects.
+
+
+class Example {
+    int x; // Instance variable stored in heap
+
+    public Example(int x) {
+        this.x = x;
+    }
+
+    public static void main(String[] args) {
+        Example obj1 = new Example(10); // Object in heap, reference in stack
+        Example obj2 = new Example(20); // Another object in heap
+    }
+}
+
+
+Memory Flow :
+
+obj1 and obj2 references stored in stack.
+obj1 and obj2 objects stored in heap.
